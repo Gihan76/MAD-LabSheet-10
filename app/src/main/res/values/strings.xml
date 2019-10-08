@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Labsheet10</string>
+
+    <string name="topic">The CourseApp</string>
+    <string name="loginBtn">LOGIN</string>
+    <string name="registerBtn">REGISTER</string>
+    <string name="usernameTxt">Username</string>
+    <string name="passwordTxt">Password</string>
+    <string name="regisertTopicTxt">Register Form</string>
+    <string name="teacher">Teacher</string>
+    <string name="student">Student</string>
+    <string name="welcomeTxt">Welcome Username</string>
+    <string name="send">SEND</string>
+    <string name="message">Message</string>
+    <string name="subject">Subject</string>
+
+</resources>
