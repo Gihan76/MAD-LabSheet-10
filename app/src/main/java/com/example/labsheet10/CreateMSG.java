@@ -40,7 +40,7 @@ public class CreateMSG extends AppCompatActivity implements View.OnClickListener
                     Toast.makeText(getApplicationContext(), "Message sent", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(CreateMSG.this, MessageList.class));
                 }else{
-                    Toast.makeText(getApplicationContext(), "Something went wront try again", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), "Something went wrong try again", Toast.LENGTH_SHORT).show();
                 }
                 break;
         }

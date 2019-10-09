@@ -6,9 +6,13 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import java.util.ArrayList;
+
 public class DBHelper extends SQLiteOpenHelper {
 
     Context context;
+    ArrayList<Message> messages;
+    ArrayList<String> messageLables;
 
     public static final String DATABASENAME = "courseApp";
 
@@ -76,6 +80,19 @@ public class DBHelper extends SQLiteOpenHelper {
         else
             return true;
 
+    }
+
+    public Cursor getAllMessages(){
+
+        SQLiteDatabase db = getWritableDatabase();
+        Cursor cursor = db.rawQuery("select * from Message_Table", null);
+        return cursor;
+    }
+
+    public Cursor getTheMessage(int id){
+        SQLiteDatabase db = getWritableDatabase();
+        Cursor cursor = db.rawQuery("select * from Message_Table where MessageID = " + id, null);
+        return cursor;
     }
 
     public boolean loginCheck(String userName, String password){

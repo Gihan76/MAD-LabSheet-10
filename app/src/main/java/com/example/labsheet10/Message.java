@@ -1,15 +1,24 @@
 package com.example.labsheet10;
 
 public class Message {
-
+    private int messageID;
     private int userID;
     private String subject;
     private String message;
 
-    public Message(int userID, String subject, String message) {
+    public Message(int messageID, int userID, String subject, String message) {
+        this.messageID = messageID;
         this.userID = userID;
         this.subject = subject;
         this.message = message;
+    }
+
+    public int getMessageID() {
+        return messageID;
+    }
+
+    public void setMessageID(int messageID) {
+        this.messageID = messageID;
     }
 
     public int getUserID() {
@@ -36,4 +45,3 @@ public class Message {
         this.message = message;
     }
 }
-
